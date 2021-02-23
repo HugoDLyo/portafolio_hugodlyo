@@ -1,0 +1,11 @@
+.bar
+    .bar__log
+        append variable
+        - nameImagen = 'Foto de Hugo'
+        a(href="#").bar__logo-link: img(src=`${pathImages}hugo.jpg` alt=`${nameImagen}` title=`${nameImagen}`).bar__img
+    nav.bar__nav
+        ul.bar__menu
+            li.bar__list: a(href="#").bar__link Sobre de Mi
+            li.bar__list: a(href="#").bar__link Estudios
+            li.bar__list: a(href="#").bar__link Portafolio
+            li.bar__list: a(href="#").bar__link Redes Sociales

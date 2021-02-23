@@ -1,0 +1,35 @@
+block variables
+    include ../configuration/utils/variables
+
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        meta(name="robots" content="index")
+        meta(name="robots" content="follow")
+        // Favicon
+        // Facebook
+        meta(property="og:image" content="")
+        meta(property="og:description" content="")
+        meta(property="og:title" content="")
+        // Normalize
+        link(rel="stylesheet" type="text/css" href=`${pathNormalize}`)
+        // Google Fonts
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;800&display=swap" rel="stylesheet")
+        // Estilos Propios
+        link(rel="stylesheet" type="text/css" href=`${pathStyle}`)
+        // Nombre de Portafolio
+        title=`${namePortfolio}`
+        meta(name="author" content="Hugo Pineda")
+        // ! MODIFICAR RUTAS EN SASS Y PUG AL PASAR A /PUBLIC/
+    body
+        header
+            include ../configuration/layout/nav
+            block header_content
+        main
+            block main_content
