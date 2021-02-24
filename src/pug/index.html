@@ -8,6 +8,8 @@
     <meta name="keywords" content="">
     <meta name="robots" content="index">
     <meta name="robots" content="follow">
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/b73ad790aa.js" crossorigin="anonymous"></script>
     <!-- Favicon-->
     <!-- Facebook-->
     <meta property="og:image" content="">
@@ -24,6 +26,7 @@
     <title>Hugo Pineda</title>
     <meta name="author" content="Hugo Pineda">
     <!-- ! MODIFICAR RUTAS EN SASS Y PUG AL PASAR A /PUBLIC/-->
+    <!-- ! MODICAR EL SCRIPT DE FONTAWESOME ANTES DEL DEPLOY-->
   </head>
   <body>
     <header>
@@ -43,12 +46,48 @@
     <main>
       <div class="banner">
         <div class="banner_text">
-          <h1>Hugo <br>Pineda</h1>
-          <p class="banner__pg">Frontend</p>
+          <h1>Hugo Pineda</h1>
+          <p class="banner__pg">Front End</p>
         </div>
-        <div class="banner__imagen"><img src="/src/images/web_html.svg" alt="Imagen de código HTML" title="Imagen de código HTML">
+        <div class="banner__imagen"><img class="banner__img" src="/src/images/web_html.svg" alt="Imagen de código HTML" title="Imagen de código HTML">
         </div>
       </div>
+      <section>
+        <div class="corners">
+          <div class="card">
+            <div class="card__imagen"><img class="card__img" src="/src/images/hugo.jpg" alt="Foto de Hugo" title="Foto de Hugo">
+            </div>
+            <div class="card__redes"><a class="card__link_r" href="#"><i class="fab fa-facebook-f"></i></a><a class="card__link_r" href="#"><i class="fab fa-twitter"></i></a><a class="card__link_r" href="#"><i class="fab fa-instagram"></i> </a><a class="card__link_r" href="#"><i class="fab fa-github"></i></a></div>
+            <div class="card__inf">
+              <p class="card__pg_i">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non commodi sunt maiores nostrum at, ut obcaecati, eius tenetur hic fugiat vitae! Voluptas non eligendi quas expedita quia dignissimos sit?</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <section>
+        <div class="pie">
+          <nav class="pie__nav">
+            <ul class="pie__menu">
+              <li class="pie__list"><a href="#">
+                  <i class="fab fa-facebook-f"></i>hugodlyo</a></li>
+              <li class="pie__list"><a href="#">
+                  <i class="fab fa-twitter"></i>@hugodlyo</a></li>
+              <li class="pie__list"><a href="#">
+                  <i class="fab fa-instagram"></i>@hugodlyo</a></li>
+              <li class="pie__list"><a href="#">
+                  <i class="fab fa-github"></i>hugodlyo</a></li>
+            </ul>
+          </nav>
+          <div class="pie__derechos">
+            <p class="pie__pg">Todos los derechos reservados por Hugo D Lyo <i class="far fa-copyright"></i></p>
+          </div>
+        </div>
+      </section>
+      <div class="icon">
+        <div class="go_up"><i class="fas fa-angle-double-up"></i></div>
+      </div>
+    </footer>
   </body>
 </html>

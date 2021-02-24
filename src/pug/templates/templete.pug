@@ -11,6 +11,10 @@ html(lang="es")
         meta(name="keywords" content="")
         meta(name="robots" content="index")
         meta(name="robots" content="follow")
+        // FontAwesome
+        |
+        |
+        <script src="https://kit.fontawesome.com/b73ad790aa.js" crossorigin="anonymous"></script>
         // Favicon
         // Facebook
         meta(property="og:image" content="")
@@ -27,9 +31,13 @@ html(lang="es")
         title=`${namePortfolio}`
         meta(name="author" content="Hugo Pineda")
         // ! MODIFICAR RUTAS EN SASS Y PUG AL PASAR A /PUBLIC/
+        // ! MODICAR EL SCRIPT DE FONTAWESOME ANTES DEL DEPLOY
     body
         header
             include ../configuration/layout/nav
             block header_content
         main
             block main_content
+
+        footer
+            block footer_content

@@ -1,0 +1,14 @@
+section
+    .corners
+        .card
+            .card__imagen
+                append variable
+                - nameImagen = 'Foto de Hugo'
+                img(src=`${pathImages}hugo.jpg` alt=`${nameImagen}` title=`${nameImagen}`).card__img
+            .card__redes
+                a(href="#").card__link_r: <i class="fab fa-facebook-f"></i>
+                a(href="#").card__link_r: <i class="fab fa-twitter"></i>
+                a(href="#").card__link_r: <i class="fab fa-instagram"></i> 
+                a(href="#").card__link_r: <i class="fab fa-github"></i>
+            .card__inf
+                p.card__pg_i Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non commodi sunt maiores nostrum at, ut obcaecati, eius tenetur hic fugiat vitae! Voluptas non eligendi quas expedita quia dignissimos sit?

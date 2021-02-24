@@ -1,7 +1,54 @@
 .banner
 {
-    // background-color: cadetblue;
     display: flex;
-    position: relative;
-    bottom: -$nav-header;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h1
+{
+    font-size: 2.8em;
+    margin: 1.2rem 0 .7rem;
+
+    @include rwd (m){
+        font-size: 3em;
+    }
+
+    @include rwd (l){
+        font-size: 4em;
+        border-bottom: 2px solid;
+    }
+}
+
+.banner__pg
+{
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: .7rem;
+
+    @include rwd (m){
+        font-size: 1.7em;
+    }
+
+    @include rwd (l){
+        font-size: 2em;
+    }
+}
+
+.banner__imagen
+{
+    width: 200px;
+
+    @include rwd (m){
+        width: 250px;
+    }
+
+    @include rwd (l){
+        width: 350px;
+    }
+}
+.banner__img
+{
+    width: 100%;    
 }
