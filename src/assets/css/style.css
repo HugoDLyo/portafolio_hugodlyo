@@ -47,15 +47,13 @@ section {
       justify-content: space-around;
       flex-direction: row; } }
 
-.bar__img {
+.bar__log {
   width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--color-primero);
-  margin-top: .2rem; }
-  .bar__img:hover {
-    border: 2px solid var(--color-tercero); }
+  height: 4rem; }
+
+.bar__img {
+  width: 100%;
+  height: 100%; }
 
 .bar__menu {
   display: flex;

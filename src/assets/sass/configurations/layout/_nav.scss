@@ -14,17 +14,17 @@
     }
 }
 
-.bar__img
+.bar__log
 {
+    // background-color: aqua;
     width: 4rem;
     height: 4rem;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--color-primero);
-    margin-top: .2rem;
-    &:hover{
-        border: 2px solid var(--color-tercero);
-    }
+}
+
+.bar__img
+{
+    width: 100%;
+    height: 100%;
 }
 
 .bar__menu

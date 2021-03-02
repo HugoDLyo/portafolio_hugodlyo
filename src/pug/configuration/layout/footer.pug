@@ -16,3 +16,7 @@ section
                         |hugodlyo
         .pie__derechos
             p.pie__pg Todos los derechos reservados por Hugo D Lyo <i class="far fa-copyright"></i>
+        .pie_logo
+            append variable
+            - nameImagen = 'Logo_hugodlyo'
+            a(href="#").pie__logo-link: img(src=`${pathImages}logo_hugodlyo.svg` alt=`${nameImagen}` title=`${nameImagen}`)
